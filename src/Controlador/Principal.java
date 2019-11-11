@@ -6,7 +6,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		JOptionPane.showMessageDialog(null,"Hola John");
+		JOptionPane.showMessageDialog(null,"hi");
 		
 	}
 
