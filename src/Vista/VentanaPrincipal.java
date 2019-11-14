@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 
 public class VentanaPrincipal extends JFrame{
 	
-	
+	public MenuPrincipal Panel1;
 	
 	public VentanaPrincipal() {
 		
@@ -13,12 +13,16 @@ public class VentanaPrincipal extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		
-		
+
 		
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setVisible(true);
 		
 	}
+	
+
+		
+
 	
 }
