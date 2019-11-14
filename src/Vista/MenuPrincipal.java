@@ -9,36 +9,32 @@ import javax.swing.JList;
 
 public class MenuPrincipal extends JFrame {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	public Escoger_Opcion panel1; 
 	
-	public JList <String> ListaMenu;
-	public String OpcionesMenu[] = {"Jugar", " Como Jugar", "Historial", "Salir"};
-	public JButton boton;
 	
 	public MenuPrincipal() {
 		
-		setSize(340,340);
+		setSize(500,400);
 		setTitle("ESCALERAS");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
-		getContentPane().setBackground(Color.GRAY);
+		getContentPane().setBackground(Color.cyan);
+		
+		inicializarVentana();
 		
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		
-
+	}
+	
+	public void inicializarVentana() {
 		
-		ListaMenu = new JList <String> (OpcionesMenu);
-		ListaMenu.setBounds(50, 150, 50,160);
-		add(ListaMenu);
+		panel1 = new Escoger_Opcion();
+		panel1.setBounds(8,8,475,355 );
+		panel1.setBackground(Color.gray);
+		add(panel1);
 		
-		boton = new JButton("Seleccionar");
-		boton.setBounds(140, 200,	60, 50);
-		add(boton);
 		
 	}
 	
