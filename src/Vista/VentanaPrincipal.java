@@ -4,6 +4,10 @@ import javax.swing.JFrame;
 
 public class VentanaPrincipal extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public MenuPrincipal Panel1;
 	
 	public VentanaPrincipal() {
@@ -17,7 +21,7 @@ public class VentanaPrincipal extends JFrame{
 		
 		setLocationRelativeTo(null);
 		setResizable(false);
-		setVisible(true);
+		setVisible(false);
 		
 	}
 	
