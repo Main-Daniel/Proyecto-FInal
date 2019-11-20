@@ -5,8 +5,11 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class VentanaOpciones extends JFrame{
-	
-	public Opción1 opcion;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public VentanaOpciones_NJugadores njugadores;
 	
 	public VentanaOpciones() {
 		setTitle("Opciones");
@@ -23,10 +26,12 @@ public class VentanaOpciones extends JFrame{
 	}
 	
 	public void inicializarVentana() {
-		opcion = new Opción1();
-		opcion.setBounds(10, 10, 220, 750);
-		opcion.setBackground(Color.gray);
-		add(opcion);
+		
+		njugadores = new VentanaOpciones_NJugadores();
+		njugadores.setBounds(10, 10, 220, 450);
+		njugadores.setBackground(Color.gray);
+		add(njugadores);
+		
 	}
 
 }

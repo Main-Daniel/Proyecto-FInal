@@ -9,7 +9,7 @@ public class MenuPrincipal extends JFrame {
 
 
 	private static final long serialVersionUID = 1L;
-	public PanelOpcionesMenuPrincipal panel1; 
+	public MenuPrincipal_PanelOpciones panel1; 
 
 
 	public MenuPrincipal() {
@@ -30,7 +30,7 @@ public class MenuPrincipal extends JFrame {
 
 	public void inicializarVentana() {
 
-		panel1 = new PanelOpcionesMenuPrincipal();
+		panel1 = new MenuPrincipal_PanelOpciones();
 		panel1.setBounds(8,8,465,345);
 		panel1.setBackground(Color.gray);
 		add(panel1);
