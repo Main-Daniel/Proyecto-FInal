@@ -9,13 +9,13 @@ public class MenuPrincipal extends JFrame {
 
 	
 	private static final long serialVersionUID = 1L;
-	public Escoger_Opcion panel1; 
+	public PanelOpcionesMenuPrincipal panel1; 
 
 
 	public MenuPrincipal() {
 
 		setSize(500,400);
-		setTitle("ESCALERAS");
+		setTitle("ESCALERAS Y SERPIENTES");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
@@ -29,12 +29,11 @@ public class MenuPrincipal extends JFrame {
 	}
 
 	public void inicializarVentana() {
-
-		panel1 = new Escoger_Opcion();
+		
+		panel1 = new PanelOpcionesMenuPrincipal();
 		panel1.setBounds(8,8,465,345);
 		panel1.setBackground(Color.gray);
 		add(panel1);
-
 
 	}
 
