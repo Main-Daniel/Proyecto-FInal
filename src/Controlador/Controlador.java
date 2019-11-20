@@ -1,18 +1,17 @@
 package Controlador;
 
+import Vista.Juego;
 import Vista.MenuPrincipal;
-import Vista.VentanaPrincipal;
 
 public class Controlador {
-	
-	public MenuPrincipal ventana_menu;
-	public VentanaPrincipal ventanaP;
-	
+
+	public MenuPrincipal ventanaMenu;
+	public Juego ventanaJuego;
+
 	public Controlador() {
-	
-		ventana_menu = new MenuPrincipal();
-		ventanaP = new VentanaPrincipal(); 
-		
+
+		ventanaMenu = new MenuPrincipal();
+
 	}
-	
+
 }

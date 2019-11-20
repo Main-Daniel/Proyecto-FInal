@@ -8,8 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 
-public class Escoger_Opcion extends  JPanel {
-
+public class PanelOpcionesMenuPrincipal extends  JPanel {
 	/**
 	 * 
 	 */
@@ -21,7 +20,7 @@ public class Escoger_Opcion extends  JPanel {
 	public JLabel integrantes;
 	public JLabel escoger;
 
-	public Escoger_Opcion() {
+	public PanelOpcionesMenuPrincipal() {
 
 		setLayout(null);
 
