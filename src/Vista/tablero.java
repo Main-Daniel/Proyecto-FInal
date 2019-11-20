@@ -7,6 +7,7 @@ public class tablero extends JPanel {
 	public int matriz[][];
 	public int columnas; 
 	public int filas;
+	public VentanaPrincipal ventana = new VentanaPrincipal();
 	
 	public tablero() {
 		
@@ -24,7 +25,7 @@ public class tablero extends JPanel {
 	public void imprimir() {
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[i].length; j++) {
-				System.out.println(matriz[columnas][filas]);
+			}
 			}
 			System.out.println();
 		}
