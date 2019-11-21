@@ -40,7 +40,6 @@ public class Controlador implements ActionListener {
 			ventanaOpc = new VentanaOpciones();
 			ventanaOpc.setVisible(true);
 			
-	}
-
-  }
+		}
+}
 }
