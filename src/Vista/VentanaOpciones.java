@@ -20,7 +20,7 @@ public class VentanaOpciones extends JFrame{
 
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setVisible(true);
+		setVisible(false);
 	}
 	
 	public void inicializarVentana() {

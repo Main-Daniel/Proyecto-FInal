@@ -2,6 +2,7 @@ package Vista;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -13,9 +14,9 @@ public class PanelOpcionesMenuPrincipal extends  JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public JList <String> ListaMenu;
-	public String OpcionesMenu[] = {"1. Jugar", "2. Como Jugar", "3. Historial", "4. Salir"};
 	public JButton boton;
+	public JButton boton2;
+	public JButton boton3;
 	public JLabel titulo;
 	public JLabel integrantes;
 	public JLabel escoger;
@@ -44,26 +45,39 @@ public class PanelOpcionesMenuPrincipal extends  JPanel {
 		integrantes.setForeground(Color.CYAN);
 		add(integrantes);
 
-		escoger = new JLabel("Escoja la opción que desea y oprima Aceptar");
+		escoger = new JLabel("Escoja la opción que desea ");
 		escoger.setBounds(45, 80, 400, 80);
 		escoger.setForeground(Color.white);
 		escoger.setFont(new Font("ink free",Font.TRUETYPE_FONT,20));
 		add(escoger);
 
-		ListaMenu = new JList <String> (OpcionesMenu);
-		ListaMenu.setBounds(160, 155 , 150, 128);
-		ListaMenu.setBackground(Color.gray);
-		ListaMenu.setForeground(Color.WHITE);
-		ListaMenu.setFont(new Font("ink free",Font.TRUETYPE_FONT,24));
-		add(ListaMenu);
-
-		boton = new JButton("Aceptar");
-		boton.setBounds(160,300,150,40);
-		boton.setFont(new Font("forte",Font.TRUETYPE_FONT,26));
-		boton.setBackground(Color.cyan);
+		boton = new JButton("1. Jugar");
+		boton.setBounds(160,150,150,40);
+		boton.setFont(new Font("Freestyle Script",Font.TRUETYPE_FONT,38));
+		boton.setBackground(Color.gray);
 		boton.setForeground(Color.orange);
+		boton.setBorderPainted(false);
 		add(boton);
+		
 
+		boton2 = new JButton("2. Historial");
+		boton2.setBounds(160,210,170,40);
+		boton2.setFont(new Font("Freestyle Script",Font.TRUETYPE_FONT,38));
+		boton2.setBackground(Color.gray);
+		boton2.setForeground(Color.orange);
+		boton2.setBorderPainted(false);
+		add(boton2);
+		
+
+		boton3 = new JButton("3. Salir");
+		boton3.setBounds(160,270,150,40);
+		boton3.setFont(new Font("Freestyle Script",Font.TRUETYPE_FONT,38));
+		boton3.setBackground(Color.gray);
+		boton3.setForeground(Color.orange);
+		boton3.setBorderPainted(false);
+		add(boton3);
+		
+		
 	}
 
 }
