@@ -6,11 +6,12 @@ import javax.swing.JFrame;
 
 public class VentanaOpciones extends JFrame{
 	
-	public Opción1 opcion;
+	public Panel_Opción1 opcion;
+	public Panel_Opcion2 opcion2;
 	
 	public VentanaOpciones() {
-		setTitle("Opciones");
-		setSize(800,600);
+		setTitle("Jugadores");
+		setSize(505,600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
@@ -23,10 +24,16 @@ public class VentanaOpciones extends JFrame{
 	}
 	
 	public void inicializarVentana() {
-		opcion = new Opción1();
-		opcion.setBounds(10, 10, 220, 750);
+		opcion = new Panel_Opción1();
+		opcion.setBounds(10, 10, 220, 550);
 		opcion.setBackground(Color.gray);
 		add(opcion);
+		
+		opcion2 = new Panel_Opcion2();
+		opcion2.setBounds(240, 10, 250, 550);
+		opcion2.setBackground(Color.GRAY);
+		add(opcion2);
+		
 	}
 
 }

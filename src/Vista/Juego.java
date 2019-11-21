@@ -1,15 +1,17 @@
 package Vista;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
 
 public class Juego extends JFrame{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
+	public Tablero tablero;
 
 	public Juego() {
+	
 		setTitle("Juego Serpientes y Escaleras");
+		setSize(800,600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 
@@ -17,6 +19,12 @@ public class Juego extends JFrame{
 		setResizable(false);
 		setVisible(true);
 
+	}
+	
+	public void inicilizarVaribles() {
+		tablero = new Tablero();
+		tablero.setBackground(Color.GRAY);
+		add(tablero);
 	}
 
 }
