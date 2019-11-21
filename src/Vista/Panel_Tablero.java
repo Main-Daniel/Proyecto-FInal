@@ -5,13 +5,13 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class Tablero extends JPanel {
+public class Panel_Tablero extends JPanel {
 
 	public JButton boton[][];
 	public int filas = 11;
 	public int columnas = 9; 
 		
-	public Tablero() {
+	public Panel_Tablero() {
 		
 		setLayout(new GridLayout());
 		cargarTablero();

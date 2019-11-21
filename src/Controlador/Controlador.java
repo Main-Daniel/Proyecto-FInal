@@ -5,16 +5,15 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-import Vista.Instrucciones;
-import Vista.Juego;
 import Vista.MenuPrincipal;
 import Vista.VentanaOpciones;
+import Vista.Ventana_Instrucciones;
 
 public class Controlador implements ActionListener {
 
 	public MenuPrincipal ventanaMenu;
 	public VentanaOpciones ventanaOpc;
-	public Instrucciones ventanainstru;
+	public Ventana_Instrucciones ventanainstru;
 
 	public Controlador() {
 
@@ -30,7 +29,7 @@ public class Controlador implements ActionListener {
 		
 		if(e.getActionCommand().equals("1. Jugar")){
 			
-			ventanainstru = new Instrucciones();		
+	    	ventanainstru = new Ventana_Instrucciones();		
 			ventanainstru.instru.siguiente.addActionListener(this);
 			
 		}
@@ -38,8 +37,50 @@ public class Controlador implements ActionListener {
 		if(e.getActionCommand().equals("SIGUIENTE")) {
 			
 			ventanaOpc = new VentanaOpciones();
+			ventanaOpc.opcion.b2.addActionListener(this);
+			ventanaOpc.opcion.b3.addActionListener(this);
+			ventanaOpc.opcion.b4.addActionListener(this);
 			ventanaOpc.setVisible(true);
 			
 		}
+		
+		ventanaOpc.opcion2.etiqueta1.setVisible(false);
+		ventanaOpc.opcion2.nombre.setVisible(false);
+		ventanaOpc.opcion2.etiqueta2.setVisible(false);
+		ventanaOpc.opcion2.nombre2.setVisible(false);
+		ventanaOpc.opcion2.etiqueta3.setVisible(false);
+		ventanaOpc.opcion2.nombre3.setVisible(false);
+		ventanaOpc.opcion2.etiqueta4.setVisible(false);
+		ventanaOpc.opcion2.nombre4.setVisible(false);
+		
+		
+		if(e.getActionCommand().equals("2")) {
+			ventanaOpc.opcion2.nombre.setVisible(true);
+			ventanaOpc.opcion2.etiqueta1.setVisible(true);
+
+			ventanaOpc.opcion2.nombre2.setVisible(true);
+			ventanaOpc.opcion2.etiqueta2.setVisible(true);
+		}else if(e.getActionCommand().equals("3")) {
+			ventanaOpc.opcion2.nombre.setVisible(true);
+			ventanaOpc.opcion2.etiqueta1.setVisible(true);
+
+			ventanaOpc.opcion2.nombre2.setVisible(true);
+			ventanaOpc.opcion2.etiqueta2.setVisible(true);
+			
+			ventanaOpc.opcion2.nombre3.setVisible(true);
+			ventanaOpc.opcion2.etiqueta3.setVisible(true);
+	    }else if(e.getActionCommand().equals("4")) {
+			ventanaOpc.opcion2.nombre.setVisible(true);
+			ventanaOpc.opcion2.etiqueta1.setVisible(true);
+
+			ventanaOpc.opcion2.nombre2.setVisible(true);
+			ventanaOpc.opcion2.etiqueta2.setVisible(true);
+			
+			ventanaOpc.opcion2.nombre3.setVisible(true);
+			ventanaOpc.opcion2.etiqueta3.setVisible(true);
+			
+			ventanaOpc.opcion2.nombre4.setVisible(true);
+			ventanaOpc.opcion2.etiqueta4.setVisible(true);
+	    }
 }
 }

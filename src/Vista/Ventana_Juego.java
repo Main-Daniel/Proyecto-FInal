@@ -4,11 +4,11 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 
-public class Juego extends JFrame{
+public class Ventana_Juego extends JFrame{
 
-	public Tablero tablero;
+	public Panel_Tablero tablero;
 
-	public Juego() {
+	public Ventana_Juego() {
 	
 		setTitle("Juego Serpientes y Escaleras");
 		setSize(800,600);
@@ -22,7 +22,7 @@ public class Juego extends JFrame{
 	}
 	
 	public void inicilizarVaribles() {
-		tablero = new Tablero();
+		tablero = new Panel_Tablero();
 		tablero.setBackground(Color.GRAY);
 		add(tablero);
 	}

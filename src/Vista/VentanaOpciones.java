@@ -13,7 +13,7 @@ public class VentanaOpciones extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public VentanaOpciones_NJugadores njugadores;
+	
 
 	
 	public VentanaOpciones() {
@@ -42,11 +42,6 @@ public class VentanaOpciones extends JFrame{
 		opcion2.setBackground(Color.GRAY);
 		add(opcion2);
 	
-		njugadores = new VentanaOpciones_NJugadores();
-		njugadores.setBounds(10, 10, 220, 450);
-		njugadores.setBackground(Color.gray);
-		add(njugadores);
-		
 	}
 
 }

@@ -4,7 +4,7 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 
-public class Instrucciones extends JFrame {
+public class Ventana_Instrucciones extends JFrame {
 	/**
 	 * 
 	 */
@@ -12,7 +12,7 @@ public class Instrucciones extends JFrame {
 
 	public Panel_Instrucciones instru;
 
-	public Instrucciones() {
+	public Ventana_Instrucciones() {
 
 		setTitle("Instrucciones");
 		setSize(600,700);

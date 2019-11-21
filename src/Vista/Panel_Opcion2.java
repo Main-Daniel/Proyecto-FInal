@@ -18,6 +18,7 @@ public class Panel_Opcion2 extends JPanel {
 	public JLabel etiqueta1;
 	public JLabel etiqueta2;
 	public JLabel etiqueta3;
+	public JLabel etiqueta4;
 	public JButton siguiente;
 	
 	public Panel_Opcion2() {
@@ -75,11 +76,11 @@ public class Panel_Opcion2 extends JPanel {
 		etiqueta3.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,28));
 		add(etiqueta3);
 		
-		etiqueta3 = new JLabel("Jugador 4:");
-		etiqueta3.setBounds(25, 385, 200, 100);
-		etiqueta3.setForeground(Color.ORANGE);
-		etiqueta3.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,28));
-		add(etiqueta3);
+		etiqueta4 = new JLabel("Jugador 4:");
+		etiqueta4.setBounds(25, 385, 200, 100);
+		etiqueta4.setForeground(Color.ORANGE);
+		etiqueta4.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,28));
+		add(etiqueta4);
 		
 		siguiente = new JButton("Aceptar");
 		siguiente.setBounds(70, 500, 100, 40);
