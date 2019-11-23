@@ -1,14 +1,16 @@
 package Vista;
 
 import java.awt.Font;
-import java.awt.GridLayout;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Panel_Opción1 extends JPanel{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public JButton b2;
 	public JButton b3;
 	public JButton b4;

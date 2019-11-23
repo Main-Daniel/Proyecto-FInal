@@ -22,9 +22,11 @@ public class Ventana_Juego extends JFrame{
 	}
 	
 	public void inicilizarVaribles() {
+		
 		tablero = new Panel_Tablero();
 		tablero.setBackground(Color.GRAY);
 		add(tablero);
+		
 	}
 
 }

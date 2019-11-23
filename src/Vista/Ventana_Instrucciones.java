@@ -17,6 +17,7 @@ public class Ventana_Instrucciones extends JFrame {
 		setTitle("Instrucciones");
 		setSize(600,700);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		dispose();
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
 

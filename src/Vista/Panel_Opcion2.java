@@ -48,12 +48,12 @@ public class Panel_Opcion2 extends JPanel {
 		nombre4.setBounds(30, 450, 200, 30);
 		add(nombre4);
 		
-		etiqueta = new JLabel("¿Cómo te ");
+		etiqueta = new JLabel("¿Nombre de");
 		etiqueta.setBounds(25, 5, 200, 50);
 		etiqueta.setFont(new Font("forte",Font.ROMAN_BASELINE,34));
 		add(etiqueta);
 		
-		etiqueta = new JLabel("llamamos?");
+		etiqueta = new JLabel("Jugador?");
 		etiqueta.setBounds(25, 20, 200, 80);
 		etiqueta.setFont(new Font("forte",Font.ROMAN_BASELINE,34));
 		add(etiqueta);

@@ -19,31 +19,30 @@ public class Controlador implements ActionListener {
 
 		ventanaMenu = new MenuPrincipal();	
 		ventanaMenu.panel1.boton.addActionListener(this);
-		
-		
-}
-	
+
+	}
+
 
 
 	public void actionPerformed(ActionEvent e) {
-		
+
 		if(e.getActionCommand().equals("1. Jugar")){
-			
-	    	ventanainstru = new Ventana_Instrucciones();		
+
+			ventanainstru = new Ventana_Instrucciones();		
 			ventanainstru.instru.siguiente.addActionListener(this);
-			
+
 		}
-		
+
 		if(e.getActionCommand().equals("SIGUIENTE")) {
-			
+
 			ventanaOpc = new VentanaOpciones();
 			ventanaOpc.opcion.b2.addActionListener(this);
 			ventanaOpc.opcion.b3.addActionListener(this);
 			ventanaOpc.opcion.b4.addActionListener(this);
 			ventanaOpc.setVisible(true);
-			
+
 		}
-		
+
 		ventanaOpc.opcion2.etiqueta1.setVisible(false);
 		ventanaOpc.opcion2.nombre.setVisible(false);
 		ventanaOpc.opcion2.etiqueta2.setVisible(false);
@@ -52,8 +51,8 @@ public class Controlador implements ActionListener {
 		ventanaOpc.opcion2.nombre3.setVisible(false);
 		ventanaOpc.opcion2.etiqueta4.setVisible(false);
 		ventanaOpc.opcion2.nombre4.setVisible(false);
-		
-		
+
+
 		if(e.getActionCommand().equals("2")) {
 			ventanaOpc.opcion2.nombre.setVisible(true);
 			ventanaOpc.opcion2.etiqueta1.setVisible(true);
@@ -66,21 +65,21 @@ public class Controlador implements ActionListener {
 
 			ventanaOpc.opcion2.nombre2.setVisible(true);
 			ventanaOpc.opcion2.etiqueta2.setVisible(true);
-			
+
 			ventanaOpc.opcion2.nombre3.setVisible(true);
 			ventanaOpc.opcion2.etiqueta3.setVisible(true);
-	    }else if(e.getActionCommand().equals("4")) {
+		}else if(e.getActionCommand().equals("4")) {
 			ventanaOpc.opcion2.nombre.setVisible(true);
 			ventanaOpc.opcion2.etiqueta1.setVisible(true);
 
 			ventanaOpc.opcion2.nombre2.setVisible(true);
 			ventanaOpc.opcion2.etiqueta2.setVisible(true);
-			
+
 			ventanaOpc.opcion2.nombre3.setVisible(true);
 			ventanaOpc.opcion2.etiqueta3.setVisible(true);
-			
+
 			ventanaOpc.opcion2.nombre4.setVisible(true);
 			ventanaOpc.opcion2.etiqueta4.setVisible(true);
-	    }
-}
+		}
+	}
 }
