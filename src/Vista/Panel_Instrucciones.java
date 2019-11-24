@@ -13,7 +13,7 @@ public class Panel_Instrucciones extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public JButton siguiente;
+	public JButton botonsiguiente;
 	public JTextField texto;
 	public JLabel etiqueta;
 
@@ -28,11 +28,11 @@ public class Panel_Instrucciones extends JPanel {
 	}
 
 	public void inicializarComponentes() {
-		siguiente = new JButton("SIGUIENTE");
-		siguiente.setBounds(220, 570, 130, 60);
-		siguiente.setBackground(Color.cyan);
-		siguiente.setFont(new Font("forte",Font.ROMAN_BASELINE,16));
-		add(siguiente);
+		botonsiguiente = new JButton("SIGUIENTE");
+		botonsiguiente.setBounds(220, 570, 130, 60);
+		botonsiguiente.setBackground(Color.cyan);
+		botonsiguiente.setFont(new Font("forte",Font.ROMAN_BASELINE,16));
+		add(botonsiguiente);
 
 		texto = new JTextField();
 		texto.setBounds(20, 80,535,450);

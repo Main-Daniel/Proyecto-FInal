@@ -3,17 +3,17 @@ package Controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JOptionPane;
-
+import Vista.Ventana_Juego;
 import Vista.MenuPrincipal;
-import Vista.VentanaOpciones;
 import Vista.Ventana_Instrucciones;
+import Vista.Ventana_Numero_Jugadores;
 
 public class Controlador implements ActionListener {
 
 	public MenuPrincipal ventanaMenu;
-	public VentanaOpciones ventanaOpc;
 	public Ventana_Instrucciones ventanainstru;
+	public Ventana_Numero_Jugadores ventanaNjugadores;
+	public Ventana_Juego ventanajuego;
 
 	public Controlador() {
 
@@ -28,58 +28,67 @@ public class Controlador implements ActionListener {
 
 		if(e.getActionCommand().equals("1. Jugar")){
 
-			ventanainstru = new Ventana_Instrucciones();		
-			ventanainstru.instru.siguiente.addActionListener(this);
+			ventanainstru = new Ventana_Instrucciones();
+			ventanainstru.toFront();
+			ventanainstru.instru.botonsiguiente.addActionListener(this);
 
 		}
-
+		
 		if(e.getActionCommand().equals("SIGUIENTE")) {
-
-			ventanaOpc = new VentanaOpciones();
-			ventanaOpc.opcion.b2.addActionListener(this);
-			ventanaOpc.opcion.b3.addActionListener(this);
-			ventanaOpc.opcion.b4.addActionListener(this);
-			ventanaOpc.setVisible(true);
-
+			
+			ventanainstru.dispose();
+			ventanaNjugadores = new Ventana_Numero_Jugadores();
+			ventanaNjugadores.panel1.b2.addActionListener(this);
+			ventanaNjugadores.panel1.b3.addActionListener(this);
+			ventanaNjugadores.panel1.b4.addActionListener(this);
+			
 		}
-
-		ventanaOpc.opcion2.etiqueta1.setVisible(false);
-		ventanaOpc.opcion2.nombre.setVisible(false);
-		ventanaOpc.opcion2.etiqueta2.setVisible(false);
-		ventanaOpc.opcion2.nombre2.setVisible(false);
-		ventanaOpc.opcion2.etiqueta3.setVisible(false);
-		ventanaOpc.opcion2.nombre3.setVisible(false);
-		ventanaOpc.opcion2.etiqueta4.setVisible(false);
-		ventanaOpc.opcion2.nombre4.setVisible(false);
-
-
+		
 		if(e.getActionCommand().equals("2")) {
-			ventanaOpc.opcion2.nombre.setVisible(true);
-			ventanaOpc.opcion2.etiqueta1.setVisible(true);
-
-			ventanaOpc.opcion2.nombre2.setVisible(true);
-			ventanaOpc.opcion2.etiqueta2.setVisible(true);
-		}else if(e.getActionCommand().equals("3")) {
-			ventanaOpc.opcion2.nombre.setVisible(true);
-			ventanaOpc.opcion2.etiqueta1.setVisible(true);
-
-			ventanaOpc.opcion2.nombre2.setVisible(true);
-			ventanaOpc.opcion2.etiqueta2.setVisible(true);
-
-			ventanaOpc.opcion2.nombre3.setVisible(true);
-			ventanaOpc.opcion2.etiqueta3.setVisible(true);
-		}else if(e.getActionCommand().equals("4")) {
-			ventanaOpc.opcion2.nombre.setVisible(true);
-			ventanaOpc.opcion2.etiqueta1.setVisible(true);
-
-			ventanaOpc.opcion2.nombre2.setVisible(true);
-			ventanaOpc.opcion2.etiqueta2.setVisible(true);
-
-			ventanaOpc.opcion2.nombre3.setVisible(true);
-			ventanaOpc.opcion2.etiqueta3.setVisible(true);
-
-			ventanaOpc.opcion2.nombre4.setVisible(true);
-			ventanaOpc.opcion2.etiqueta4.setVisible(true);
+			
+			ventanaNjugadores.panel2.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta1.setVisible(true);
+			ventanaNjugadores.panel2.nombre1.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta2.setVisible(true);
+			ventanaNjugadores.panel2.nombre2.setVisible(true);
+			ventanaNjugadores.panel2.b_aceptar.addActionListener(this);
+			
 		}
+		
+		if(e.getActionCommand().equals("3")) {
+			
+			ventanaNjugadores.panel2.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta1.setVisible(true);
+			ventanaNjugadores.panel2.nombre1.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta2.setVisible(true);
+			ventanaNjugadores.panel2.nombre2.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta3.setVisible(true);
+			ventanaNjugadores.panel2.nombre3.setVisible(true);
+			ventanaNjugadores.panel2.b_aceptar.addActionListener(this);
+			
+		}
+		
+		if(e.getActionCommand().equals("4")) {
+			
+			ventanaNjugadores.panel2.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta1.setVisible(true);
+			ventanaNjugadores.panel2.nombre1.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta2.setVisible(true);
+			ventanaNjugadores.panel2.nombre2.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta3.setVisible(true);
+			ventanaNjugadores.panel2.nombre3.setVisible(true);
+			ventanaNjugadores.panel2.etiqueta4.setVisible(true);
+			ventanaNjugadores.panel2.nombre4.setVisible(true);
+			ventanaNjugadores.panel2.b_aceptar.addActionListener(this);
+			
+		}
+		
+		if(e.getActionCommand().equals("Aceptar")) {
+			
+			ventanaNjugadores.dispose();
+			ventanajuego = new Ventana_Juego();
+			
+		}
+		
 	}
 }
