@@ -86,16 +86,8 @@ public class Panel_Opcion2 extends JPanel {
 		siguiente.setBounds(70, 500, 100, 40);
 		siguiente.setFont(new Font("forte",Font.ROMAN_BASELINE,14));
 		add(siguiente);
-	
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }
 
