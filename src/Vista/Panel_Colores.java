@@ -28,7 +28,7 @@ public class Panel_Colores extends JPanel{
 
 	public void inicializarComponentes() {
 		
-		aceptar = new JButton("SELECCIONAR");
+		aceptar = new JButton("Seleccionar");
 		aceptar.setBounds(60, 300, 110, 40);
 		add(aceptar);
 		

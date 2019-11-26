@@ -25,7 +25,7 @@ public class Panel_Tablero extends JPanel {
 
 	public void cargarTablero() {
 
-		setLayout(new GridLayout(1, 1));
+		setLayout(new GridLayout(filas,columnas));
 
 		boton = new JButton[filas][columnas];
 		boton.clone();
