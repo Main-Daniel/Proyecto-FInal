@@ -1,23 +1,19 @@
 package Vista;
 
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Panel_Tablero extends JPanel {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
 	public JButton boton[][];
-	public int filas = 10;
-	public int columnas = 10; 
+	public int filas = 11;
+	public int columnas = 9; 
 		
 	public Panel_Tablero() {
 		
-		setLayout(new FlowLayout());
+		setLayout(new GridLayout());
 		cargarTablero();
 		setVisible(true);
 		
@@ -25,7 +21,7 @@ public class Panel_Tablero extends JPanel {
 
 	public void cargarTablero() {
 
-		setLayout(new GridLayout(1, 1));
+		setLayout(new GridLayout(filas, columnas));
 
 		boton = new JButton[filas][columnas];
 		boton.clone();
@@ -38,7 +34,10 @@ public class Panel_Tablero extends JPanel {
 		}
 		validate();
 		repaint();
-		
 	}
 
+
+	
+	
+	
 }
