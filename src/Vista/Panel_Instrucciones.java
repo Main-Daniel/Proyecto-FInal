@@ -40,7 +40,7 @@ public class Panel_Instrucciones extends JPanel {
 		siguiente.setFont(new Font("forte",Font.ROMAN_BASELINE,16));
 		add(siguiente);
 		
-		intruc = new JTextArea("REGLAS:\n" + "Leer antes de jugar\n\n" + "- El objetivo del juego es ser el primer jugador en llegar hasta el final moviéndote a\r\n" + 
+		intruc = new JTextArea("INSTRUCCIONES DE JUEGO:\n" + "Leer antes de jugar\n\n" + "- El objetivo del juego es ser el primer jugador en llegar hasta el final moviéndote a\r\n" + 
 				"través del tablero de abajo hasta arriba, desde el cuadro inicial al cuadro final.\r\n" + 
 				"\r\n" + "\r\n" + 
 				"- Te puedes mover de izquierda a derecha en la primera fila, después\r\n" + 
