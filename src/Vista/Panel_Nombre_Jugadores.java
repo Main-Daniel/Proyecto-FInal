@@ -6,14 +6,14 @@ import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.JTextArea;
 
 public class Panel_Nombre_Jugadores extends JPanel {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public JTextField nombre1, nombre2, nombre3, nombre4;	
+	public JTextArea nombre1, nombre2, nombre3, nombre4;	
 	public JLabel etiqueta, etiqueta1, etiqueta2,
 	etiqueta3, etiqueta4;
 	public JButton b_aceptar;
@@ -47,7 +47,7 @@ public class Panel_Nombre_Jugadores extends JPanel {
 		etiqueta1.setVisible(false);
 		add(etiqueta1);
 
-		nombre1 = new JTextField();
+		nombre1 = new JTextArea();
 		nombre1.setBounds(30, 120, 200, 30);
 		nombre1.setVisible(false);
 		add(nombre1);
@@ -59,7 +59,7 @@ public class Panel_Nombre_Jugadores extends JPanel {
 		etiqueta2.setVisible(false);
 		add(etiqueta2);
 
-		nombre2 = new JTextField();
+		nombre2 = new JTextArea();
 		nombre2.setBounds(30, 230, 200, 30);
 		nombre2.setVisible(false);
 		add(nombre2);
@@ -71,7 +71,7 @@ public class Panel_Nombre_Jugadores extends JPanel {
 		etiqueta3.setVisible(false);
 		add(etiqueta3);
 
-		nombre3 = new JTextField();
+		nombre3 = new JTextArea();
 		nombre3.setBounds(30, 340, 200, 30);
 		nombre3.setVisible(false);
 		add(nombre3);
@@ -83,7 +83,7 @@ public class Panel_Nombre_Jugadores extends JPanel {
 		etiqueta4.setVisible(false);
 		add(etiqueta4);
 
-		nombre4 = new JTextField();
+		nombre4 = new JTextArea();
 		nombre4.setBounds(30, 450, 200, 30);
 		nombre4.setVisible(false);
 		add(nombre4);

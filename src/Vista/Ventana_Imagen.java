@@ -6,7 +6,9 @@ import javax.swing.JFrame;
 
 public class Ventana_Imagen extends JFrame{
 	
-	public Panel_Imagen panel1;
+	public Panel_Colores panel1;
+	public Panel_Imagenes panel2;
+	
 	
 	public Ventana_Imagen() {
 
@@ -26,10 +28,15 @@ public class Ventana_Imagen extends JFrame{
 	}
 	
 	public void inicializarPanel() {
-		panel1 = new Panel_Imagen();
-		panel1.setBounds(10, 10, 370, 350);
+		panel1 = new Panel_Colores();
+		panel1.setBounds(200, 10, 185, 350);
 		panel1.setBackground(Color.gray);
-		add(panel1);
+		getContentPane().add(panel1);
+		
+
+		panel2 = new Panel_Imagenes();
+		panel2.setBounds(10, 10, 190, 350);
+		add(panel2);
 	}
 
 }

@@ -33,7 +33,7 @@ public class Controlador implements ActionListener {
 
 		ventanaMenu = new MenuPrincipal();	
 		ventanaMenu.panel1.boton.addActionListener(this);
-		
+
 
 }
 
@@ -102,18 +102,53 @@ public class Controlador implements ActionListener {
 		if(e.getActionCommand().equals("Aceptar")) {
 			ventanaima = new Ventana_Imagen(); 
 			
-			imagenfichas = new ImageIcon(getClass().getResource("../Imagenes.Imagenes/Ficha-1.jpg"));
-			iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(50,40,Image.SCALE_DEFAULT));
-			ventanaima.panel1.etiquetaimagen.setIcon(iconofichas);
-	
+			ventanaima.panel2.etiquetaimagen.setVisible(true);
+			imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+			iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+			ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);	
 			
-			
-			
-			
-			
+			ventanaima.panel1.color1.addActionListener(this);
+			ventanaima.panel1.color2.addActionListener(this);
+			ventanaima.panel1.color3.addActionListener(this);
+			ventanaima.panel1.color4.addActionListener(this);
 			
 		}
 		
-	}
-}
+			 if(e.getActionCommand().equals("Azul")) {
+				 
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+			 }else if(e.getActionCommand().equals("Rojo")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+					
+			 }else if(e.getActionCommand().equals("Verde")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+			 }else if(e.getActionCommand().equals("Amarillo")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+					
+					
+					
+			 }
+				
+			}
+	
+			
+		}
+		
+	
+
 
