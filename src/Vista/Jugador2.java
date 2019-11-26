@@ -6,11 +6,11 @@ import javax.swing.JFrame;
 
 public class Jugador2 extends JFrame{
 
-	public Panel_Numero_Jugadores panel1;
-	public Panel_Nombre_Jugadores panel2;
+	//public Panel_Numero_Jugadores panel1;
+	//public Panel_Nombre_Jugadores panel2;
 	
 	
-	public Jugador2() {
+	/*public Jugador2() {
 		
 		setTitle("Jugadores");
 		setSize(505,600);
@@ -38,6 +38,6 @@ public class Jugador2 extends JFrame{
 		panel2.setBackground(Color.GRAY);
 		add(panel2);
 
-	}
+	}*/
 	
 }

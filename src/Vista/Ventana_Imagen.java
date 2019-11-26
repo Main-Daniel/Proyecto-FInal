@@ -5,7 +5,7 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class Ventana_Imagen extends JFrame{
-	
+
 	public Panel_Colores panel1;
 	public Panel_Imagenes panel2;
 	
@@ -15,6 +15,7 @@ public class Ventana_Imagen extends JFrame{
 		setTitle("Imagenes");
 		setSize(400,400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
 		
@@ -28,10 +29,11 @@ public class Ventana_Imagen extends JFrame{
 	}
 	
 	public void inicializarPanel() {
+
 		panel1 = new Panel_Colores();
 		panel1.setBounds(200, 10, 185, 350);
 		panel1.setBackground(Color.gray);
-		getContentPane().add(panel1);
+		add(panel1);
 		
 
 		panel2 = new Panel_Imagenes();
