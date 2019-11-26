@@ -1,0 +1,36 @@
+INSTRUCCIONES DE JUEGO:
+Leer antes de jugar
+
+- El objetivo del juego es ser el primer jugador en llegar hasta el final moviéndote a
+través del tablero de abajo hasta arriba, desde el cuadro inicial al cuadro final.
+
+
+- Te puedes mover de izquierda a derecha en la primera fila, después
+subes a la segunda fila y te mueves de derecha a izquierda y así sucesivamente,
+sigue los números en el tablero para ver hacia dónde moverte,
+por ejemplo, si te salió un 5 en los dados y estás en el número 11, entonces
+mueve tu ficha al número 16.
+
+
+- El inicio de juego va por este orden, primero el juegador 1,
+despues el jugador 2 y asi sucesivamente.
+
+
+- Las escaleras en el tablero te permiten subir para avanzar con más rapidez,
+pero antes deberas contestar una pregunta del reglamento estudiantil de
+la Universidad el Bosque si la contestas corectamente subiras por la escalera,
+de lo contrario no podras subir. Si caes en un cuadro que muestra la imagen del
+inicio de la escalera, entonces puedes mover tu pieza por toda la escalera hasta
+donde termina. Si caes en la parte superior de la escalera o en un cuadro a la
+mitad de la escalera, te tienes que quedar en ese mismo lugar no te puedes mover
+ hacia abajo en las escaleras.
+
+
+- Las serpientes hacen que te muevas hacia atrás en el tablero ya que te tienes que
+deslizar por ellas si caes exactamente en un cuadro donde está la cola de la
+serpiente, tienes que contestar una pregunta, si la contestas bien sigues normal
+tu juego, si la contestas mal tendras que llevar tu ficha hasta donde está la
+cabeza de la serpiente, esto te hara retrasar en tu juego.
+
+
+- Y los mas importante de todo... disfruta el juego :)

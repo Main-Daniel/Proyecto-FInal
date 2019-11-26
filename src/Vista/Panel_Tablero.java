@@ -18,14 +18,16 @@ public class Panel_Tablero extends JPanel {
 	public Panel_Tablero() {
 		
 		setLayout(new FlowLayout());
+		
 		cargarTablero();
+		
 		setVisible(true);
 		
 	}
 
 	public void cargarTablero() {
 
-		setLayout(new GridLayout(1, 1));
+		setLayout(new GridLayout(filas, columnas));
 
 		boton = new JButton[filas][columnas];
 		boton.clone();
@@ -38,7 +40,6 @@ public class Panel_Tablero extends JPanel {
 		}
 		validate();
 		repaint();
-		
 	}
-
+	
 }
