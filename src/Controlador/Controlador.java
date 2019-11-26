@@ -157,7 +157,7 @@ public class Controlador implements ActionListener, MouseListener {
 	}
 
 		
-	public void Musica() {
+/*	public void Musica() {
 
 		try {
 
@@ -165,8 +165,8 @@ public class Controlador implements ActionListener, MouseListener {
 			PlayerEvent reproductor;
 			cancion = new FileInputStream("canciones\\Queen - Don't Stop Me Now.mp3");
 			BufferedInputStream Bis = new BufferedInputStream(cancion);
-			reproductor = new PlayerEvent();
-			reproductor.play();
+			reproductor = new PlayerEvent(cancion);
+			((cancion) reproductor).play();
 
 		} catch (FileNotFoundException e1) {
 
@@ -214,6 +214,6 @@ public class Controlador implements ActionListener, MouseListener {
 		// TODO Auto-generated method stub
 		
 	}
-
+*/
 }
 
