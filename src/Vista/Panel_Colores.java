@@ -8,8 +8,7 @@ import javax.swing.JPanel;
 
 public class Panel_Colores extends JPanel{
 	
-	
-	public JButton botonselec;
+	public JButton aceptar;
 	public JButton color1; 
 	public JButton color2; 
 	public JButton color3; 
@@ -22,23 +21,16 @@ public class Panel_Colores extends JPanel{
 	public Panel_Colores() {
 		
 		setLayout(null);
-
 		inicializarComponentes();
-
-		
-		inicializarComponentes();
-		
-
 		setVisible(true);
 		
 	}
 
 	public void inicializarComponentes() {
 		
-
-		nombre = new JLabel("Jugador 1 Color: ");
-		nombre.setBounds(40, 30, 120, 60);
-		add(nombre);
+		aceptar = new JButton("SELECCIONAR");
+		aceptar.setBounds(60, 300, 110, 40);
+		add(aceptar);
 		
 		color1 = new JButton("Azul");
 		color1.setBounds(50, 70, 100, 40);
@@ -59,11 +51,15 @@ public class Panel_Colores extends JPanel{
 		color4.setBounds(50,220,100,40);
 		color4.setBackground(Color.yellow);
 		add(color4);
+		
+		nombre = new JLabel("Jugador 1 Color: ");
+		nombre.setBounds(40, 30, 120, 60);
+		add(nombre);
 
-		botonselec = new JButton("Seleccionar");
-		botonselec.setBounds(50, 300, 130, 100);
-		add(botonselec);
-
+		
+		
+		
+		
 		
 	}
 

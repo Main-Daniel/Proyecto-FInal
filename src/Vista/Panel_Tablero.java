@@ -7,7 +7,10 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Panel_Tablero extends JPanel {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public JButton boton[][];
 	public int filas = 10;
 	public int columnas = 10; 
@@ -15,9 +18,7 @@ public class Panel_Tablero extends JPanel {
 	public Panel_Tablero() {
 		
 		setLayout(new FlowLayout());
-
 		cargarTablero();
-		
 		setVisible(true);
 		
 	}
@@ -41,6 +42,3 @@ public class Panel_Tablero extends JPanel {
 	}
 
 }
-
-
-

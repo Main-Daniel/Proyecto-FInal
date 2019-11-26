@@ -5,6 +5,10 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class Ventana_Instrucciones extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public Panel_Instrucciones instru;
 
@@ -14,9 +18,6 @@ public class Ventana_Instrucciones extends JFrame {
 		setSize(600,700);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		dispose();
-
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE );
-
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
 
