@@ -17,7 +17,7 @@ public class Ventana_Numero_Jugadores extends JFrame{
 	public Ventana_Numero_Jugadores() {
 		
 		setTitle("Jugadores");
-		setSize(505,600);
+		setSize(245,600);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.cyan);
@@ -37,10 +37,6 @@ public class Ventana_Numero_Jugadores extends JFrame{
 		panel1.setBackground(Color.gray);
 		add(panel1);
 
-		panel2 = new Panel_Nombre_Jugadores();
-		panel2.setBounds(240, 10, 250, 550);
-		panel2.setBackground(Color.GRAY);
-		add(panel2);
 
 	}
 

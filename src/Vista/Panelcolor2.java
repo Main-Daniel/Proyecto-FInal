@@ -1,7 +1,6 @@
 package Vista;
 
 import java.awt.Color;
-import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -9,20 +8,17 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.EmptyBorder;
 
-public class Panel_Colores extends JPanel{
+public class Panelcolor2 extends JPanel{
 	
 	public JTextField nombreJugador;
 	public JComboBox<Object> lista;
 	public String[] Colores = {"Azul", "Rojo", "Verde", "Amarillo"};
 	public JLabel etiqueta;
 	public JButton boton;
-	public JButton ver;
 	
 	
-	public Panel_Colores() {
+	public Panelcolor2() {
 		
 		setLayout(null);
 		setVisible(true);
@@ -37,27 +33,16 @@ public class Panel_Colores extends JPanel{
 		add(lista);
 		
 		boton = new JButton("Escoger");
-		boton.setBounds(50, 250, 100, 30);
+		boton.setBounds(50, 200, 100, 30);
 		add(boton);
-		
-
-		ver = new JButton("Ver");
-		ver.setBounds(80, 50, 70, 20);
-		add(ver);
 			
 		nombreJugador = new JTextField();
-		nombreJugador.setBounds(40,120,130,20);
+		nombreJugador.setBounds(40,100,130,20);
 		add(nombreJugador);
 		
-		etiqueta = new JLabel("Ingresa tu nombre Jugador 1: "); 
-		etiqueta.setBounds(10, 80, 180, 50);
-		add(etiqueta);
-
-		
-		
-		
-		
-		
-	}
-
+		etiqueta = new JLabel("Ingresa tu nombre Jugador 2: "); 
+		etiqueta.setBounds(10, 60, 180, 50);
+		add(etiqueta);	
+	
 }
+	}

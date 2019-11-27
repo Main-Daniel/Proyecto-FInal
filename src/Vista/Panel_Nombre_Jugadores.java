@@ -40,7 +40,7 @@ public class Panel_Nombre_Jugadores extends JPanel {
 		etiqueta.setFont(new Font("forte",Font.ROMAN_BASELINE,34));
 		add(etiqueta);
 
-		etiqueta1 = new JLabel("Jugador 1:");
+		etiqueta1 = new JLabel("Jugador");
 		etiqueta1.setBounds(25, 55, 200, 100);
 		etiqueta1.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,28));
 		etiqueta1.setForeground(Color.ORANGE);
