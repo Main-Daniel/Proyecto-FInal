@@ -16,7 +16,8 @@ public class Panelcolor2 extends JPanel{
 	public String[] Colores = {"Azul", "Rojo", "Verde", "Amarillo"};
 	public JLabel etiqueta;
 	public JButton boton;
-	
+	public JButton confirmar;
+	public JButton ver;
 	
 	public Panelcolor2() {
 		
@@ -32,9 +33,13 @@ public class Panelcolor2 extends JPanel{
 		lista.setBounds(80, 10, 80, 30);
 		add(lista);
 		
-		boton = new JButton("Escoger");
+		boton = new JButton("guardar");
 		boton.setBounds(50, 200, 100, 30);
 		add(boton);
+		
+		confirmar = new JButton("confirmar");
+		confirmar.setBounds(50,200,100,30);
+		add(confirmar);
 			
 		nombreJugador = new JTextField();
 		nombreJugador.setBounds(40,100,130,20);
@@ -43,6 +48,12 @@ public class Panelcolor2 extends JPanel{
 		etiqueta = new JLabel("Ingresa tu nombre Jugador 2: "); 
 		etiqueta.setBounds(10, 60, 180, 50);
 		add(etiqueta);	
+		
+
+		ver = new JButton("Ver");
+		ver.setBounds(80, 50, 70, 20);
+		add(ver);
+			
 	
 }
 	}

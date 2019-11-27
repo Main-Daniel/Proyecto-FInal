@@ -16,6 +16,7 @@ import Vista.Ventana_Juego;
 import Vista.MenuPrincipal;
 
 import Vista.Ventana_Imagen;
+import Vista.Ventana_Imagen3;
 import Vista.Ventana_Imagnes2;
 import Vista.Ventana_Instrucciones;
 import Vista.Ventana_Numero_Jugadores;
@@ -28,10 +29,11 @@ public class Controlador implements ActionListener {
 	public Ventana_Instrucciones ventanainstru;
 	public Ventana_Imagen ventanaima;
 	public Ventana_Imagnes2 ventanaima2;
+	public Ventana_Imagen3 ventananima3;
 	public Ventana_Numero_Jugadores ventanaNjugadores;
 	public Ventana_Juego ventanajuego;
-	ImageIcon imagenfichas, imagencolores, dado;
-	Icon iconofichas, iconocolores, dadonum;
+	ImageIcon imagenfichas, imagencolores, imagenfichas2, imagencolores2, dado;
+	Icon iconofichas, iconocolores, iconofichas2, iconocolores2, dadonum;
 
 	
 
@@ -50,6 +52,7 @@ public class Controlador implements ActionListener {
 
 		if(e.getActionCommand().equals("1. Jugar")){
 
+			ventanaMenu.dispose();
 			ventanainstru = new Ventana_Instrucciones();
 			ventanainstru.toFront();
 			ventanainstru.instru.botonsiguiente.addActionListener(this);
@@ -66,9 +69,10 @@ public class Controlador implements ActionListener {
 			
 			
 		}
-		
+		//cuando oprime 2
 		if(e.getActionCommand().equals("2")) {
 			
+			ventanaNjugadores.dispose();
 			ventanaima = new Ventana_Imagen();
 			ventanaima.panel2.etiquetaimagen.setVisible(true);
 			
@@ -77,8 +81,9 @@ public class Controlador implements ActionListener {
 			ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 			ventanaima.panel1.ver.addActionListener(this);
 			ventanaima.panel1.boton.addActionListener(this);
-
-		}
+			ventanaima.panel1.add(ventanaima.panel1.boton);
+			
+		
 		if(ventanaima.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
 				 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
@@ -105,50 +110,167 @@ public class Controlador implements ActionListener {
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 			 }
+			 if(e.getActionCommand().equals("Escoger")) {
 					
-			  if(e.getActionCommand().equals("3")) {
+					ventanaima2 = new Ventana_Imagnes2();
+					ventanaima2.setVisible(true);
+					imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+					iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+					ventanaima2.panel1.ver.addActionListener(this);
+					ventanaima2.panel1.boton.addActionListener(this);
+
+				}
+				else if(ventanaima2.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
+						 
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Rojo")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+							
+							
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Verde")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
+							iconofichas2= new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Amarillo")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+					 }
+	
+		
+		//cuando oprime 3
+			 	
+	}else  if(e.getActionCommand().equals("3")) {
 			
+				  	ventanaNjugadores.dispose();
 					ventanaima = new Ventana_Imagen();
+					ventanaima.setVisible(true);
 					ventanaima.panel2.etiquetaimagen.setVisible(true);
+					
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					ventanaima.panel1.boton2.addActionListener(this);
+					ventanaima.panel1.add(ventanaima.panel1.boton2);
+					
+			 	}
+			  if(ventanaima.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
+					 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 					
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Rojo")&&e.getActionCommand().equals("Ver")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+					
+					
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Verde")&&e.getActionCommand().equals("Ver")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+					
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Amarillo")&&e.getActionCommand().equals("Ver")) {
+
+					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
+					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+			 }
+			 	if(e.getActionCommand().equals("Guardar")) {
+					
+					ventanaima2 = new Ventana_Imagnes2();
+					ventanaima2.setVisible(true);
+					imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+					iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+					ventanaima2.panel1.ver.addActionListener(this);
+					ventanaima2.panel1.boton.addActionListener(this);
+
 				}
-
-					 if(e.getActionCommand().equals("Azul")) {
+				else if(ventanaima2.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
 						 
-							imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
-							iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
-							ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
 							
-					 }else if(e.getActionCommand().equals("Rojo")) {
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Rojo")&&e.getActionCommand().equals("Ver")) {
 
-							imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
-							iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
-							ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
 							
 							
-					 }else if(e.getActionCommand().equals("Verde")) {
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Verde")&&e.getActionCommand().equals("Ver")) {
 
-							imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
-							iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
-							ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
+							iconofichas2= new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
 							
-					 }else if(e.getActionCommand().equals("Amarillo")) {
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Amarillo")&&e.getActionCommand().equals("Ver")) {
 
-							imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
-							iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
-							ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventanaima2.panel2.etiquetaimagen2.setIcon(iconofichas2);
+					 }
+			 	if(e.getActionCommand().equals("Confirmar")) {
+					
+					ventananima3 = new Ventana_Imagen3();
+					ventananima3.setVisible(true);
+					imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+					iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+					ventananima3.panel2.etiquetaimagen3.setIcon(iconofichas2);
+					ventananima3.panel1.ver.addActionListener(this);
+					ventananima3.panel1.boton.addActionListener(this);
+
+				}
+			 	
+					 else if(ventananima3.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
+						 
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventananima3.panel2.etiquetaimagen3.setIcon(iconofichas2);
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Rojo")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventananima3.panel2.etiquetaimagen3.setIcon(iconofichas2);
 							
 							
-					 
-				
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Verde")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
+							iconofichas2= new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventananima3.panel2.etiquetaimagen3.setIcon(iconofichas2);
+							
+					 }else if(ventanaima2.panel1.lista.getSelectedItem().equals("Amarillo")&&e.getActionCommand().equals("Ver")) {
+
+							imagenfichas2 = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
+							iconofichas2 = new ImageIcon(imagenfichas2.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
+							ventananima3.panel2.etiquetaimagen3.setIcon(iconofichas2);
+					 }
+			 	
+			 	// cuando oprime 4
+		 if(e.getActionCommand().equals("4")) {
 			
-		}
-
-		else if(e.getActionCommand().equals("4")) {
-			
+			ventanaNjugadores.dispose();
 			ventanaima = new Ventana_Imagen();
 			ventanaima.panel2.etiquetaimagen.setVisible(true);
 			imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
@@ -156,35 +278,35 @@ public class Controlador implements ActionListener {
 			ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 			
 		}
-
-			 if(e.getActionCommand().equals("Azul2")) {
-				 
+				if(ventanaima.panel1.lista.getSelectedItem().equals("Azul")&&e.getActionCommand().equals("Ver")) {
+					 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 1.png"));
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 					
-			 }else if(e.getActionCommand().equals("Rojo2")) {
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Rojo")&&e.getActionCommand().equals("Ver")) {
 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 2.png"));
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 					
 					
-			 }else if(e.getActionCommand().equals("Verde2")) {
+					
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Verde")&&e.getActionCommand().equals("Ver")) {
 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 3.png"));
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
 					
-			 }else if(e.getActionCommand().equals("Amarillo2")) {
+			 }else if(ventanaima.panel1.lista.getSelectedItem().equals("Amarillo")&&e.getActionCommand().equals("Ver")) {
 
 					imagenfichas = new ImageIcon(getClass().getResource("/Modelo/Ficha - 4.png"));
 					iconofichas = new ImageIcon(imagenfichas.getImage().getScaledInstance(150,150,Image.SCALE_DEFAULT));
 					ventanaima.panel2.etiquetaimagen.setIcon(iconofichas);
-					
-		}
+			 }
+
 		
-		else if(e.getActionCommand().equals("Escoger")) {
+		/*else if(e.getActionCommand().equals("Escoger")) {
 
 				ventanaima.dispose();
 				ventanajuego = new Ventana_Juego();
@@ -196,6 +318,19 @@ public class Controlador implements ActionListener {
 				ventanajuego.lanzar.addActionListener(this);
 				
 			}
+				
+		else if(e.getActionCommand().equals("Escoger")) {
+
+			ventanaima.dispose();
+			ventanajuego = new Ventana_Juego();
+			ventanajuego.musica.breproducir.addActionListener(this);
+			
+			dado = new ImageIcon(getClass().getResource("/Modelo/dado1.jpg"));
+			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
+			ventanajuego.dados.etiquetadado.setIcon(dadonum);	
+			ventanajuego.lanzar.addActionListener(this);
+			
+		}*/
 		 	 
 		 	int i = (int)(Math.random()*6+1);
 		 	
@@ -232,8 +367,10 @@ public class Controlador implements ActionListener {
 				ventanajuego.dados.etiquetadado.setIcon(dadonum);	
 		 		 	
 		 }
+
 	}
-}	
+}
+
 
 
 
