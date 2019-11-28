@@ -2,9 +2,11 @@ package Vista;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JPanel;
 
 public class MenuPrincipal_PanelOpciones extends  JPanel {
