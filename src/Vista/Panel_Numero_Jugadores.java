@@ -15,6 +15,7 @@ public class Panel_Numero_Jugadores extends JPanel{
 	public JButton b2;
 
 	public JButton b4;
+
 	
 	public Panel_Numero_Jugadores() {
 		
@@ -43,6 +44,7 @@ public class Panel_Numero_Jugadores extends JPanel{
 		b2.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,50));
 		add(b2);
 		
+
 		
 		b4 = new JButton("4");
 		b4.setBounds(50, 420, 100, 100);
