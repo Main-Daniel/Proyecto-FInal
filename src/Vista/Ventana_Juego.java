@@ -15,6 +15,7 @@ public class Ventana_Juego extends JFrame{
 	public Panel_Musica musica;
 	public Panel_Dado dados;
 	public JButton lanzar;
+	public Panel_Movimiento imagen;
 	
 
 	public Ventana_Juego() {
@@ -52,6 +53,9 @@ public class Ventana_Juego extends JFrame{
 		lanzar.setBounds(570,350,150,40);
 		add(lanzar);
 		
+        imagen = new Panel_Movimiento();
+        imagen.setBounds(10, 500, 30, 30);
+        add(imagen);
         
         
         

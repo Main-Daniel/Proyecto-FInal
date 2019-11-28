@@ -33,7 +33,7 @@ public class Panelcolor2 extends JPanel{
 		lista.setBounds(80, 10, 80, 30);
 		add(lista);
 		
-		boton = new JButton("guardar");
+		boton = new JButton("Guardar");
 		boton.setBounds(50, 200, 100, 30);
 		add(boton);
 		

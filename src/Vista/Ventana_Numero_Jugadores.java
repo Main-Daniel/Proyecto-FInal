@@ -8,7 +8,7 @@ public class Ventana_Numero_Jugadores extends JFrame{
 
 
 	public Panel_Numero_Jugadores panel1;
-	public Panel_Nombre_Jugadores panel2;
+	public panel_Boton panel2;
 	/**
 	 * 
 	 */
@@ -37,7 +37,9 @@ public class Ventana_Numero_Jugadores extends JFrame{
 		panel1.setBackground(Color.gray);
 		add(panel1);
 
-
+		panel2 = new panel_Boton();
+		panel2.setBounds(10, 30, 180, 500);
+		add(panel2);
 	}
 
 }
