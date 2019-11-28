@@ -8,10 +8,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 public class Panel_Instrucciones extends JPanel {
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public JButton botonsiguiente;
 	public JLabel etiqueta;
 	private JTextArea intruc;
@@ -83,5 +85,6 @@ public class Panel_Instrucciones extends JPanel {
 		barraDesplazamiento = new JScrollPane(intruc);
 		barraDesplazamiento.setBounds(10, 85, 559, 465);
 		add(barraDesplazamiento);
+		
 	}
 }
