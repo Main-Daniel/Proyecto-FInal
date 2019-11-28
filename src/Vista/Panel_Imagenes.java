@@ -3,18 +3,16 @@ package Vista;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Panel_ImagenFicha extends JPanel {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class Panel_Imagenes extends JPanel {
+	
 	public JLabel etiquetaimagen;
-
-	public Panel_ImagenFicha() {
+	
+	public Panel_Imagenes() {
 
 		etiquetaimagen = new JLabel();
 		add(etiquetaimagen);
 
 	}
+	
 
 }
