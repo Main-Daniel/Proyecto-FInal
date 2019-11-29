@@ -23,7 +23,7 @@ public class Panelcolor2 extends JPanel{
 		
 		setLayout(null);
 		setVisible(true);
-
+		
 		etiqueta = new JLabel("Color:", SwingConstants.CENTER);
 		etiqueta.setForeground(Color.BLACK);
 		etiqueta.setBounds(20, 10, 80, 30);
@@ -35,7 +35,7 @@ public class Panelcolor2 extends JPanel{
 		
 		boton = new JButton("Guardar");
 
-		boton = new JButton("guardar");
+		boton = new JButton("Guardar");
 		boton.setBounds(50, 200, 100, 30);
 		add(boton);
 		

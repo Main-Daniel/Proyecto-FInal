@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Controlador SyE = new Controlador();
+		Controlador Programa = new Controlador();
 		
 	}
 

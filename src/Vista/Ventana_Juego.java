@@ -1,5 +1,7 @@
 package Vista;
 
+import java.awt.Color;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -8,34 +10,35 @@ public class Ventana_Juego extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public Panel_Tablero tablero;
+
+	public Panel_Juego_Tablero tablero;
 	public Panel_Dado dados;
 	public JButton lanzar;
 	
 
 	
-
-
-	public Ventana_Juego() {
 	
-		setTitle("Juego Serpientes y Escaleras");
-		setSize(800,600);
+	public Ventana_Juego() {
+		
+		setSize(950,700);
+		setTitle("Juego Serpientes Y Escaleras");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		getContentPane().setLayout(null);
+		setBackground(Color.cyan);
+		setLayout(null);
+		
 		
 		inicializarPaneles();
-
-		setLocationRelativeTo(null);
+		
+		
 		setResizable(false);
+		setLocationRelativeTo(null);
 		setVisible(true);
 		
-		
-
 	}
 	
 	public void inicializarPaneles() {
 		
-		tablero = new Panel_Tablero();
+		tablero = new Panel_Juego_Tablero();
 		tablero.setBounds(10, 10, 500, 540);
 		add(tablero);
 		
@@ -52,5 +55,4 @@ public class Ventana_Juego extends JFrame{
 }
 	
 	}
-
 

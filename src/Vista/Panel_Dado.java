@@ -13,7 +13,11 @@ public JButton boton;
 
 		etiquetadado = new JLabel();
 		add(etiquetadado);
-
+		
+		boton = new JButton("Tirar Dado");
+		boton.setBounds(30, 30, 100, 30);
+		add(boton);
+		
 	}
 
 }
