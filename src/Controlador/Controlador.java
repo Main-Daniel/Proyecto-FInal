@@ -136,7 +136,7 @@ public class Controlador implements ActionListener{
 			ventanajuego = new Ventana_Juego();
 			ventanajuego.dado.boton.addActionListener(this);
 
-			dado = new ImageIcon(getClass().getResource("/Modelo/dado1.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Dado (GIF).gif"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);	
 			break;
@@ -155,36 +155,37 @@ public class Controlador implements ActionListener{
 
 		if(i == 1 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/dado1.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 1.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);
 			
 		}else if(i == 2 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/Dado - 2.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 2.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);
 			
 		}else if(i == 3 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/Dado - 3.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 3.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);
 			
 		}else if(i == 4 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/Dado - 4.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 4.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
-			ventanajuego.dado.etiquetadado.setIcon(dadonum);	
+			ventanajuego.dado.etiquetadado.setIcon(dadonum);
+			
 		}else if(i == 5 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/Dado - 5.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 5.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);	
 			
 		}else if(i == 6 ) {
 			
-			dado = new ImageIcon(getClass().getResource("/Modelo/Dado - 6.jpg"));
+			dado = new ImageIcon(getClass().getResource("/Modelo/Cara - 6.png"));
 			dadonum = new ImageIcon(dado.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT));
 			ventanajuego.dado.etiquetadado.setIcon(dadonum);
 			
