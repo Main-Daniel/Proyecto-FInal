@@ -7,10 +7,5 @@ import javax.swing.JPanel;
 
 public class Panel_Time extends JPanel{
 
-	public Timer time;
-	
-	
-     }
 
-
-
+}

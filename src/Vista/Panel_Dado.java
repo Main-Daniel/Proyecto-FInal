@@ -15,5 +15,5 @@ public JButton boton;
 		add(etiquetadado);
 
 	}
-	
+
 }

@@ -1,6 +1,7 @@
 package Vista;
 
 import java.awt.Font;
+
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -16,7 +17,6 @@ public class Panel_Numero_Jugadores extends JPanel{
 	public JButton b3;
 	public JButton b4;
 
-	
 	public Panel_Numero_Jugadores() {
 		
 		setLayout(null);
@@ -53,7 +53,6 @@ public class Panel_Numero_Jugadores extends JPanel{
 		b4.setBounds(50, 420, 100, 100);
 		b4.setFont(new Font("Freestyle Script",Font.ROMAN_BASELINE,50));
 		add(b4);
-		
-	}
+		}
 	
 }
